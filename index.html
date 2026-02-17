@@ -1,255 +1,257 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تسلیت</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Traditional Arabic', 'B Nazanin', 'Arial', sans-serif;
-            background: #000;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .card {
-            position: relative;
-            width: 600px;
-            height: 900px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(255,255,255,0.1);
-            border: 1px solid #333;
-        }
-        
-        .background-black {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #0a0a0a;
-            background-image: radial-gradient(circle at 30% 40%, #222 0%, #000 80%);
-        }
-        
-        /* افکت نور ملایم سفید */
-        .background-black::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 50% 30%, rgba(255,255,255,0.05) 0%, transparent 60%);
-        }
-        
-        .content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            padding: 40px 20px;
-            box-sizing: border-box;
-            color: #fff;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-        }
-        
-        .top-section {
-            text-align: center;
-            width: 100%;
-        }
-        
-        .name {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #fff;
-            border-bottom: 2px solid rgba(255,255,255,0.3);
-            padding-bottom: 15px;
-            display: inline-block;
-        }
-        
-        .image-container {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 20px auto;
-            border: 4px solid rgba(255,255,255,0.3);
-            box-shadow: 0 0 30px rgba(255,255,255,0.2);
-            background: #111;
-        }
-        
-        .grandfather-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        
-        /* اگر عکس موجود نبود */
-        .image-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(145deg, #222, #111);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 80px;
-            color: rgba(255,255,255,0.5);
-            font-weight: bold;
-        }
-        
-        .message {
-            font-size: 22px;
-            margin: 20px 0;
-            text-align: center;
-            line-height: 1.8;
-            color: #fff;
-        }
-        
-        .dates-container {
-            width: 100%;
-            text-align: center;
-            margin-top: auto;
-        }
-        
-        .dates {
-            font-size: 26px;
-            background: rgba(255,255,255,0.05);
-            padding: 20px 30px;
-            border-radius: 15px;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255,255,255,0.2);
-            display: inline-block;
-            min-width: 300px;
-        }
-        
-        .date-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin: 10px 0;
-        }
-        
-        .date-label {
-            font-size: 20px;
-            opacity: 0.7;
-            color: #fff;
-        }
-        
-        .date-value {
-            font-size: 24px;
-            font-weight: 300;
-            color: #fff;
-        }
-        
-        .prayer {
-            margin-top: 20px;
-            font-size: 16px;
-            opacity: 0.6;
-            color: #ccc;
-        }
-        
-        @media (max-width: 650px) {
-            .card {
-                width: 95%;
-                height: auto;
-                min-height: 800px;
-            }
-            
-            .name {
-                font-size: 36px;
-            }
-            
-            .image-container {
-                width: 220px;
-                height: 220px;
-            }
-            
-            .message {
-                font-size: 18px;
-            }
-            
-            .dates {
-                font-size: 22px;
-                min-width: 250px;
-                padding: 15px;
-            }
-            
-            .date-value {
-                font-size: 20px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>my grandpa</title>
+
+<style>
+body{
+margin:0;
+padding:0;
+font-family:'Traditional Arabic','B Nazanin','Arial',sans-serif;
+background:#000;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.card{
+position:relative;
+width:600px;
+min-height:900px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(255,255,255,0.1);
+border:1px solid #333;
+}
+
+.background-black{
+position:absolute;
+width:100%;
+height:100%;
+background:#0a0a0a;
+background-image:radial-gradient(circle at 30% 40%,#222 0%,#000 80%);
+}
+
+.content{
+position:relative;
+min-height:900px;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:40px 20px;
+color:#fff;
+text-shadow:0 2px 10px rgba(0,0,0,0.8);
+}
+
+.name{
+font-size:48px;
+font-weight:bold;
+border-bottom:2px solid rgba(255,255,255,0.3);
+padding-bottom:15px;
+}
+
+.image-container{
+width:280px;
+height:280px;
+border-radius:50%;
+overflow:hidden;
+margin:20px auto;
+border:4px solid rgba(255,255,255,0.3);
+box-shadow:0 0 30px rgba(255,255,255,0.2);
+background:#111;
+}
+
+.grandfather-image{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.image-placeholder{
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:80px;
+color:#777;
+}
+
+.message{
+font-size:22px;
+text-align:center;
+line-height:1.8;
+}
+
+.dates{
+font-size:26px;
+background:rgba(255,255,255,0.05);
+padding:20px 30px;
+border-radius:15px;
+border:1px solid rgba(255,255,255,0.2);
+}
+
+.music-player{
+text-align:center;
+margin-top:30px;
+}
+
+.music-btn{
+margin-top:15px;
+padding:12px 25px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,0.4);
+background:rgba(255,255,255,0.08);
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.signature{
+margin-top:30px;
+font-size:14px;
+color:rgba(255,255,255,0.4);
+}
+</style>
 </head>
+
 <body>
-    <div class="card">
-        <div class="background-black"></div>
-        <div class="content">
-            <div class="top-section">
-                <!-- نام درشت پدربزرگ -->
-                <div class="name">حسین حسین بیکی</div>
-                
-                <!-- محل قرارگیری عکس پدربزرگ -->
-                <div class="image-container">
-                    <!-- آدرس عکس پدربزرگ -->
-                    <img class="grandfather-image" src="https://raw.githubusercontent.com/Ramtiossinbiki4444444/my-grandpa/main/msg40435110-3051.jpg" 
-                         alt="عکس پدربزرگ"
-                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="image-placeholder" style="display: none;">👤</div>
-                </div>
-                
-                <div class="message">
-                    <div>بابابزرگ یعنی قشنگ‌ترین کلمه دنیا</div>
-                    <div>که هیچ مترادفی نمی‌تونی براش پیدا کنی!</div>
-                    <div style="margin-top: 15px;">نبودن‌هایى هست که هیچ بودنى جبرانشان نمی‌کند</div>
-                    <div>و آدم‌هایی هستند که هرگز تکرار نمی‌شوند</div>
-                    <div style="margin-top: 15px;">درگذشت پدربزرگ عزیز و مهربانت رو تسلیت می‌گم</div>
-                    <div>برای خودت و خانواده‌ات صبر آرزو می‌کنم</div>
-                    <div>و امیدوارم روح پدربزرگت شاد باشه</div>
-                    <div style="font-size: 20px; margin-top: 20px; color: #fff;">روحت شاد و یادت گرامی</div>
-                </div>
-            </div>
-            
-            <div class="dates-container">
-                <div class="dates">
-                    <div class="date-item">
-                        <span class="date-label">تولد:</span>
-                        <span class="date-value">—</span>
-                    </div>
-                    <div class="date-item">
-                        <span class="date-label">فوت:</span>
-                        <span class="date-value">1404/11/23</span>
-                    </div>
-                </div>
-                
-                <div class="prayer">
-                    از خداوند برایشان رحمت و مغفرت مسئلت داریم(ساخته شده توسط رامتین در 1404/11/28)
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        // اگر عکس لود نشد، placeholder نمایش داده شود
-        document.querySelectorAll('.grandfather-image').forEach(img => {
-            img.onerror = function() {
-                this.style.display = 'none';
-                this.nextElementSibling.style.display = 'flex';
-            }
-        });
-    </script>
+
+<div class="card">
+<div class="background-black"></div>
+
+<div class="content">
+
+<div class="name">حسین حسین بیکی</div>
+
+<div class="image-container">
+<img class="grandfather-image"
+src="https://raw.githubusercontent.com/Ramtiossinbiki4444444/my-grandpa/main/msg40435110-3051.jpg"
+onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+<div class="image-placeholder" style="display:none;">👤</div>
+</div>
+
+<div class="message">
+بابابزرگ یعنی قشنگ‌ترین کلمه دنیا<br>
+که هیچ مترادفی نمی‌تونی براش پیدا کنی!<br><br>
+نبودن‌هایی هست که هیچ بودنی جبرانشان نمی‌کند<br>
+و آدم‌هایی هستند که هرگز تکرار نمی‌شوند<br><br>
+درگذشت پدربزرگ عزیز و مهربانت رو تسلیت می‌گم<br>
+برای خودت و خانواده‌ات صبر آرزو می‌کنم<br>
+روحت شاد و یادت گرامی
+</div>
+
+<br>
+
+<div class="dates">
+تولد —<br>
+فوت ۱۴۰۳/۱۱/۲۳
+</div>
+
+<div class="music-player">
+
+<audio id="bgMusic" loop>
+<source src="https://raw.githubusercontent.com/Ramtiossinbiki4444444/my-grandpa/main/Ali-Nemati-Tanhaei%20(2).mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" id="musicBtn" onclick="toggleMusic()">▶️ پخش موزیک</button>
+
+<button class="music-btn" onclick="openVideo()">🎬 پخش فیلم</button>
+
+<div style="font-size:14px;color:#888;margin-top:10px;">
+🎵 علی نعمتی – تنهایی
+</div>
+
+</div>
+
+<div class="signature">
+ساخته شده توسط رامتین
+</div>
+
+</div>
+</div>
+
+<!-- پنجره فیلم -->
+<div id="videoModal" style="
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.85);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:99999;
+">
+
+<div style="
+width:90%;
+max-width:900px;
+background:#000;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 0 40px rgba(255,255,255,0.25);
+">
+
+<div style="padding:10px;text-align:left;background:#111;">
+<button onclick="closeVideo()" style="
+padding:8px 18px;
+border-radius:20px;
+border:none;
+cursor:pointer;
+">⬅️ بازگشت</button>
+</div>
+
+<iframe id="videoFrame"
+width="100%"
+height="500"
+src=""
+style="border:none;background:#000;">
+</iframe>
+
+</div>
+</div>
+
+<script>
+const audio=document.getElementById("bgMusic");
+const btn=document.getElementById("musicBtn");
+audio.volume=0.5;
+
+function toggleMusic(){
+if(audio.paused){
+audio.play();
+btn.innerText="⏸ قطع موزیک";
+}else{
+audio.pause();
+btn.innerText="▶️ پخش موزیک";
+}
+}
+
+// پخش خودکار بعد اولین کلیک
+document.addEventListener("click",function first(){
+if(audio.paused){
+audio.play().then(()=>{
+btn.innerText="⏸ قطع موزیک";
+}).catch(()=>{});
+}
+document.removeEventListener("click",first);
+});
+
+function openVideo(){
+const link="https://raw.githubusercontent.com/Ramtiossinbiki4444444/my-grandpa/main/grok-video-6725fc0c-059e-4648-b1f6-ce479197463e.mp4"; // ← لینک فیلم
+document.getElementById("videoFrame").src=link;
+document.getElementById("videoModal").style.display="flex";
+audio.pause();
+btn.innerText="▶️ پخش موزیک";
+}
+
+function closeVideo(){
+document.getElementById("videoModal").style.display="none";
+document.getElementById("videoFrame").src="";
+}
+</script>
+
 </body>
 </html>
 
